@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ce0012292a48412cbe39b87244386ac5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ce0012292a48412cbe39b87244386ac5" ></div>
+        
+</body>
+<script>    
+    
+            var map_ce0012292a48412cbe39b87244386ac5 = L.map(
+                "map_ce0012292a48412cbe39b87244386ac5",
+                {
+                    center: [40.350113, -74.431602],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e078debd64bb4f36af9f15baaf3782f1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+            var marker_b158e0be15ff4933a60d91cd1ec4a8eb = L.marker(
+                [40.4769212, -74.0107298],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_3b68ec673f35459191094061bf43f368 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_382c98f1735f43c48bf0c0c4af5a4fb0 = $(`<div id="html_382c98f1735f43c48bf0c0c4af5a4fb0" style="width: 100.0%; height: 100.0%;">[{'name': 'American Golden-Plover - Pluvialis dominica', 'date': '05 Jul 2021'}, {'name': 'White Ibis - Eudocimus albus', 'date': '05 Jul 2021'}]</div>`)[0];
+            popup_3b68ec673f35459191094061bf43f368.setContent(html_382c98f1735f43c48bf0c0c4af5a4fb0);
+        
+
+        marker_b158e0be15ff4933a60d91cd1ec4a8eb.bindPopup(popup_3b68ec673f35459191094061bf43f368)
+        ;
+
+        
+    
+    
+            var marker_85b79a590ce94dc8a14f8628b68be46e = L.marker(
+                [40.1944134, -74.7327805],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_189183cbdb454a4c8106813aca8fb639 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58ed6c69c27c40c59c293d95a40942e2 = $(`<div id="html_58ed6c69c27c40c59c293d95a40942e2" style="width: 100.0%; height: 100.0%;">[{'name': 'Cliff Swallow - Petrochelidon pyrrhonota', 'date': '27 Jun 2021'}]</div>`)[0];
+            popup_189183cbdb454a4c8106813aca8fb639.setContent(html_58ed6c69c27c40c59c293d95a40942e2);
+        
+
+        marker_85b79a590ce94dc8a14f8628b68be46e.bindPopup(popup_189183cbdb454a4c8106813aca8fb639)
+        ;
+
+        
+    
+    
+            var marker_952d49e28e2f47ea8504fbf9a81a2daa = L.marker(
+                [40.316411, -74.747477],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_ee7bc79a2be94877844b4211eb8e84e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d359efe6574f458c85c4d3a0998acd09 = $(`<div id="html_d359efe6574f458c85c4d3a0998acd09" style="width: 100.0%; height: 100.0%;">[{'name': 'Grasshopper Sparrow - Ammodramus savannarum', 'date': '27 Jun 2021'}, {'name': 'Eastern Meadowlark - Sturnella magna', 'date': '27 Jun 2021'}, {'name': 'Dickcissel - Spiza americana', 'date': '27 Jun 2021'}]</div>`)[0];
+            popup_ee7bc79a2be94877844b4211eb8e84e9.setContent(html_d359efe6574f458c85c4d3a0998acd09);
+        
+
+        marker_952d49e28e2f47ea8504fbf9a81a2daa.bindPopup(popup_ee7bc79a2be94877844b4211eb8e84e9)
+        ;
+
+        
+    
+    
+            var marker_763299db96604e1e8c75f2a5ed649b32 = L.marker(
+                [40.5464104, -74.1182005],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_44ad723ae3a948e3917fb47b2125fa5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b85c269c8a354fc0b59ab45258b3ee84 = $(`<div id="html_b85c269c8a354fc0b59ab45258b3ee84" style="width: 100.0%; height: 100.0%;">[{'name': 'Bank Swallow - Riparia riparia', 'date': '12 Jun 2021'}]</div>`)[0];
+            popup_44ad723ae3a948e3917fb47b2125fa5a.setContent(html_b85c269c8a354fc0b59ab45258b3ee84);
+        
+
+        marker_763299db96604e1e8c75f2a5ed649b32.bindPopup(popup_44ad723ae3a948e3917fb47b2125fa5a)
+        ;
+
+        
+    
+    
+            var marker_d3318eb11d5448a2b66a1d756bc5ae67 = L.marker(
+                [40.6877528, -74.1107252],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_9bea0018a64f4f13995018a722ff746c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd10175630b74f18972dc252e64ab059 = $(`<div id="html_bd10175630b74f18972dc252e64ab059" style="width: 100.0%; height: 100.0%;">[{'name': 'Marsh Wren - Cistothorus palustris', 'date': '10 Jun 2021'}]</div>`)[0];
+            popup_9bea0018a64f4f13995018a722ff746c.setContent(html_bd10175630b74f18972dc252e64ab059);
+        
+
+        marker_d3318eb11d5448a2b66a1d756bc5ae67.bindPopup(popup_9bea0018a64f4f13995018a722ff746c)
+        ;
+
+        
+    
+    
+            var marker_3b40720207f948a1baab3730681a33c5 = L.marker(
+                [40.7025698, -74.0493536],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_ac2604ebddcf4a31a00c591fa9539a02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78c5fa372db64429bf4234d6928178ae = $(`<div id="html_78c5fa372db64429bf4234d6928178ae" style="width: 100.0%; height: 100.0%;">[{'name': 'Orchard Oriole - Icterus spurius', 'date': '06 Jun 2021'}, {'name': 'Willow Flycatcher - Empidonax traillii', 'date': '18 May 2021'}, {'name': 'Worm-eating Warbler - Helmitheros vermivorum', 'date': '13 May 2021'}, {'name': 'Chestnut-sided Warbler - Setophaga pensylvanica', 'date': '13 May 2021'}, {'name': 'Prairie Warbler - Setophaga discolor', 'date': '13 May 2021'}, {'name': 'Eastern Kingbird - Tyrannus tyrannus', 'date': '06 May 2021'}, {'name': 'Blue-headed Vireo - Vireo solitarius', 'date': '21 Apr 2021'}, {'name': 'Brown Thrasher - Toxostoma rufum', 'date': '21 Apr 2021'}, {'name': 'Greater Scaup - Aythya marila', 'date': '20 Mar 2021'}, {'name': 'American Woodcock - Scolopax minor', 'date': '13 Mar 2021'}, {'name': 'Iceland Gull - Larus glaucoides', 'date': '15 Feb 2021'}, {'name': 'Common Redpoll - Acanthis flammea', 'date': '14 Jan 2021'}, {'name': 'Fox Sparrow - Passerella iliaca', 'date': '14 Jan 2021'}, {'name': 'Brant - Branta bernicla', 'date': '17 Oct 2020'}, {'name': 'Red-breasted Nuthatch - Sitta canadensis', 'date': '17 Oct 2020'}, {'name': 'Sharp-shinned Hawk - Accipiter striatus', 'date': '17 Oct 2020'}, {'name': 'Brown Creeper - Certhia americana', 'date': '17 Oct 2020'}, {'name': 'Dark-eyed Junco - Junco hyemalis', 'date': '04 Oct 2020'}, {'name': 'Yellow-bellied Sapsucker - Sphyrapicus varius', 'date': '03 Oct 2020'}, {'name': 'Golden-crowned Kinglet - Regulus satrapa', 'date': '03 Oct 2020'}, {'name': 'Blackpoll Warbler - Setophaga striata', 'date': '03 Oct 2020'}, {'name': 'Black-throated Blue Warbler - Setophaga caerulescens', 'date': '03 Oct 2020'}, {'name': 'Palm Warbler - Setophaga palmarum', 'date': '03 Oct 2020'}, {'name': 'Pine Warbler - Setophaga pinus', 'date': '03 Oct 2020'}, {'name': 'Yellow-rumped Warbler - Setophaga coronata', 'date': '03 Oct 2020'}, {'name': 'Northern Shoveler - Spatula clypeata', 'date': '01 Oct 2020'}, {'name': 'Ruby-crowned Kinglet - Regulus calendula', 'date': '26 Sep 2020'}, {'name': 'Eastern Towhee - Pipilo erythrophthalmus', 'date': '26 Sep 2020'}, {'name': 'Black-and-white Warbler - Mniotilta varia', 'date': '26 Sep 2020'}, {'name': 'American Redstart - Setophaga ruticilla', 'date': '26 Sep 2020'}, {'name': 'Northern Parula - Setophaga americana', 'date': '26 Sep 2020'}, {'name': 'Red-tailed Hawk - Buteo jamaicensis', 'date': '25 Sep 2020'}, {'name': 'Killdeer - Charadrius vociferus', 'date': '23 Sep 2020'}, {'name': 'Downy Woodpecker - Dryobates pubescens', 'date': '23 Sep 2020'}, {'name': 'Northern Flicker - Colaptes auratus', 'date': '23 Sep 2020'}, {'name': 'Eastern Wood-Pewee - Contopus virens', 'date': '20 Sep 2020'}, {'name': 'Eastern Phoebe - Sayornis phoebe', 'date': '20 Sep 2020'}, {'name': "Swainson's Thrush - Catharus ustulatus", 'date': '20 Sep 2020'}, {'name': 'White-throated Sparrow - Zonotrichia albicollis', 'date': '20 Sep 2020'}, {'name': 'Magnolia Warbler - Setophaga magnolia', 'date': '20 Sep 2020'}, {'name': 'Black-throated Green Warbler - Setophaga virens', 'date': '20 Sep 2020'}, {'name': 'American Black Duck - Anas rubripes', 'date': '18 Sep 2020'}, {'name': 'Osprey - Pandion haliaetus', 'date': '16 Sep 2020'}, {'name': 'Savannah Sparrow - Passerculus sandwichensis', 'date': '16 Sep 2020'}, {'name': 'American Oystercatcher - Haematopus palliatus', 'date': '07 Sep 2020'}, {'name': 'Laughing Gull - Leucophaeus atricilla', 'date': '07 Sep 2020'}, {'name': 'Great Black-backed Gull - Larus marinus', 'date': '07 Sep 2020'}, {'name': 'Great Blue Heron - Ardea herodias', 'date': '07 Sep 2020'}, {'name': 'Black-crowned Night-Heron - Nycticorax nycticorax', 'date': '07 Sep 2020'}, {'name': 'Yellow-crowned Night-Heron - Nyctanassa violacea', 'date': '07 Sep 2020'}, {'name': 'Turkey Vulture - Cathartes aura', 'date': '07 Sep 2020'}, {'name': 'Great Egret - Ardea alba', 'date': '21 Aug 2020'}, {'name': 'Brown-headed Cowbird - Molothrus ater', 'date': '21 Aug 2020'}, {'name': 'Double-crested Cormorant - Phalacrocorax auritus', 'date': '05 Jul 2020'}, {'name': 'Chipping Sparrow - Spizella passerina', 'date': '05 Jul 2020'}]</div>`)[0];
+            popup_ac2604ebddcf4a31a00c591fa9539a02.setContent(html_78c5fa372db64429bf4234d6928178ae);
+        
+
+        marker_3b40720207f948a1baab3730681a33c5.bindPopup(popup_ac2604ebddcf4a31a00c591fa9539a02)
+        ;
+
+        
+    
+    
+            var marker_ede69ef1ee1845338338bcd99eb96b61 = L.marker(
+                [39.464298, -74.417612],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_510d46417f9440089a8a81225f2f1823 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94662d356be04169a53d1dd9f61e10e7 = $(`<div id="html_94662d356be04169a53d1dd9f61e10e7" style="width: 100.0%; height: 100.0%;">[{'name': 'Red-necked Phalarope - Phalaropus lobatus', 'date': '23 May 2021'}, {'name': 'Gull-billed Tern - Gelochelidon nilotica', 'date': '23 May 2021'}, {'name': 'Caspian Tern - Hydroprogne caspia', 'date': '23 May 2021'}, {'name': 'Black Skimmer - Rynchops niger', 'date': '23 May 2021'}, {'name': 'Black-bellied Plover - Pluvialis squatarola', 'date': '18 Apr 2021'}, {'name': 'Dunlin - Calidris alpina', 'date': '18 Apr 2021'}, {'name': "Bonaparte's Gull - Chroicocephalus philadelphia", 'date': '18 Apr 2021'}, {'name': "Forster's Tern - Sterna forsteri", 'date': '18 Apr 2021'}]</div>`)[0];
+            popup_510d46417f9440089a8a81225f2f1823.setContent(html_94662d356be04169a53d1dd9f61e10e7);
+        
+
+        marker_ede69ef1ee1845338338bcd99eb96b61.bindPopup(popup_510d46417f9440089a8a81225f2f1823)
+        ;
+
+        
+    
+    
+            var marker_7e27d6959fec4d898ca0662e5e72c745 = L.marker(
+                [39.1963928, -75.0278878],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_d7f35ce615824733becf66e1577eb734 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44bd58f407fb4a409c0d088ffa57afef = $(`<div id="html_44bd58f407fb4a409c0d088ffa57afef" style="width: 100.0%; height: 100.0%;">[{'name': 'Red Knot - Calidris canutus', 'date': '22 May 2021'}, {'name': 'Short-billed Dowitcher - Limnodromus griseus', 'date': '22 May 2021'}]</div>`)[0];
+            popup_d7f35ce615824733becf66e1577eb734.setContent(html_44bd58f407fb4a409c0d088ffa57afef);
+        
+
+        marker_7e27d6959fec4d898ca0662e5e72c745.bindPopup(popup_d7f35ce615824733becf66e1577eb734)
+        ;
+
+        
+    
+    
+            var marker_fad6e3cc203d440d8f5d35e26b126b9f = L.marker(
+                [39.0317999, -74.7723111],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_8ee87e6a103a4c73aa5f99aab64185ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9915afcd5a234bf2964b9b75e8bd8266 = $(`<div id="html_9915afcd5a234bf2964b9b75e8bd8266" style="width: 100.0%; height: 100.0%;">[{'name': 'Clapper Rail - Rallus crepitans', 'date': '22 May 2021'}, {'name': 'Semipalmated Plover - Charadrius semipalmatus', 'date': '22 May 2021'}, {'name': 'Piping Plover - Charadrius melodus', 'date': '22 May 2021'}]</div>`)[0];
+            popup_8ee87e6a103a4c73aa5f99aab64185ea.setContent(html_9915afcd5a234bf2964b9b75e8bd8266);
+        
+
+        marker_fad6e3cc203d440d8f5d35e26b126b9f.bindPopup(popup_8ee87e6a103a4c73aa5f99aab64185ea)
+        ;
+
+        
+    
+    
+            var marker_f1f162e88beb477f97202ad687652e7b = L.marker(
+                [38.9338272, -74.9550854],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_7399ab67a10743edb021edfcc3d8fa94 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66115efcd8d04ce098ddfeaa0bc7be51 = $(`<div id="html_66115efcd8d04ce098ddfeaa0bc7be51" style="width: 100.0%; height: 100.0%;">[{'name': 'Little Blue Heron - Egretta caerulea', 'date': '22 May 2021'}, {'name': 'Blue-winged Teal - Spatula discors', 'date': '24 Oct 2020'}, {'name': "Cooper's Hawk - Accipiter cooperii", 'date': '24 Oct 2020'}, {'name': 'Tree Swallow - Tachycineta bicolor', 'date': '24 Oct 2020'}, {'name': 'Purple Finch - Haemorhous purpureus', 'date': '24 Oct 2020'}, {'name': 'Pine Siskin - Spinus pinus', 'date': '24 Oct 2020'}, {'name': 'Indigo Bunting - Passerina cyanea', 'date': '24 Oct 2020'}]</div>`)[0];
+            popup_7399ab67a10743edb021edfcc3d8fa94.setContent(html_66115efcd8d04ce098ddfeaa0bc7be51);
+        
+
+        marker_f1f162e88beb477f97202ad687652e7b.bindPopup(popup_7399ab67a10743edb021edfcc3d8fa94)
+        ;
+
+        
+    
+    
+            var marker_75a80c53ee72450a8252d24197eb6868 = L.marker(
+                [40.7833, -74.1025167],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_4b01c22da63b4ed8a5777f4e3a9771fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b21218221734e5ba601293400ceb0ae = $(`<div id="html_6b21218221734e5ba601293400ceb0ae" style="width: 100.0%; height: 100.0%;">[{'name': "Wilson's Phalarope - Phalaropus tricolor", 'date': '13 May 2021'}, {'name': 'Lesser Yellowlegs - Tringa flavipes', 'date': '13 May 2021'}, {'name': 'Least Tern - Sternula antillarum', 'date': '13 May 2021'}, {'name': 'American Tree Sparrow - Spizelloides arborea', 'date': '06 Feb 2021'}, {'name': 'Least Sandpiper - Calidris minutilla', 'date': '30 Aug 2020'}, {'name': 'Carolina Wren - Thryothorus ludovicianus', 'date': '30 Aug 2020'}, {'name': 'American Goldfinch - Spinus tristis', 'date': '30 Aug 2020'}]</div>`)[0];
+            popup_4b01c22da63b4ed8a5777f4e3a9771fb.setContent(html_6b21218221734e5ba601293400ceb0ae);
+        
+
+        marker_75a80c53ee72450a8252d24197eb6868.bindPopup(popup_4b01c22da63b4ed8a5777f4e3a9771fb)
+        ;
+
+        
+    
+    
+            var marker_df7ac89276b5416e9e57cf0bf2604d13 = L.marker(
+                [40.9993797, -75.1110234],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_a3df5ca20f0643fda45962c9419ce573 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce2a633f04c04b1ab8e4a3a1f6d2e06c = $(`<div id="html_ce2a633f04c04b1ab8e4a3a1f6d2e06c" style="width: 100.0%; height: 100.0%;">[{'name': 'Yellow-throated Vireo - Vireo flavifrons', 'date': '09 May 2021'}, {'name': 'Red-eyed Vireo - Vireo olivaceus', 'date': '09 May 2021'}, {'name': 'Northern Rough-winged Swallow - Stelgidopteryx serripennis', 'date': '09 May 2021'}, {'name': 'Hooded Warbler - Setophaga citrina', 'date': '09 May 2021'}]</div>`)[0];
+            popup_a3df5ca20f0643fda45962c9419ce573.setContent(html_ce2a633f04c04b1ab8e4a3a1f6d2e06c);
+        
+
+        marker_df7ac89276b5416e9e57cf0bf2604d13.bindPopup(popup_a3df5ca20f0643fda45962c9419ce573)
+        ;
+
+        
+    
+    
+            var marker_ac80c12099ac44b3b65218c15cf3e341 = L.marker(
+                [40.8995168, -74.1791808],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_e0ad93afe5ac4dcb96dd7445fbdf3f85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ee06189b7224658acecade6a3ac782f = $(`<div id="html_5ee06189b7224658acecade6a3ac782f" style="width: 100.0%; height: 100.0%;">[{'name': 'Louisiana Waterthrush - Parkesia motacilla', 'date': '08 May 2021'}, {'name': 'Rose-breasted Grosbeak - Pheucticus ludovicianus', 'date': '08 May 2021'}]</div>`)[0];
+            popup_e0ad93afe5ac4dcb96dd7445fbdf3f85.setContent(html_5ee06189b7224658acecade6a3ac782f);
+        
+
+        marker_ac80c12099ac44b3b65218c15cf3e341.bindPopup(popup_e0ad93afe5ac4dcb96dd7445fbdf3f85)
+        ;
+
+        
+    
+    
+            var marker_c59ecab44f0d4a0da27cac3134aa2dc1 = L.marker(
+                [40.8389034, -74.038893],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_8784d9aa17cc4a1b866cae15dba05121 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e28d53f48854422d95fdb55de64ab17d = $(`<div id="html_e28d53f48854422d95fdb55de64ab17d" style="width: 100.0%; height: 100.0%;">[{'name': 'Solitary Sandpiper - Tringa solitaria', 'date': '04 May 2021'}, {'name': 'Wood Thrush - Hylocichla mustelina', 'date': '04 May 2021'}, {'name': 'House Wren - Troglodytes aedon', 'date': '02 May 2021'}, {'name': 'Baltimore Oriole - Icterus galbula', 'date': '02 May 2021'}]</div>`)[0];
+            popup_8784d9aa17cc4a1b866cae15dba05121.setContent(html_e28d53f48854422d95fdb55de64ab17d);
+        
+
+        marker_c59ecab44f0d4a0da27cac3134aa2dc1.bindPopup(popup_8784d9aa17cc4a1b866cae15dba05121)
+        ;
+
+        
+    
+    
+            var marker_07e468582a3e48c08e9f8704ba6ff959 = L.marker(
+                [40.72641, -74.090546],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_1a302ca7fe7e4e24a2a375b2eaad2a83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2dde432103bf458cb9c82328e7a8fb09 = $(`<div id="html_2dde432103bf458cb9c82328e7a8fb09" style="width: 100.0%; height: 100.0%;">[{'name': 'Spotted Sandpiper - Actitis macularius', 'date': '04 May 2021'}, {'name': 'Green Heron - Butorides virescens', 'date': '04 May 2021'}, {'name': 'Evening Grosbeak - Coccothraustes vespertinus', 'date': '04 May 2021'}]</div>`)[0];
+            popup_1a302ca7fe7e4e24a2a375b2eaad2a83.setContent(html_2dde432103bf458cb9c82328e7a8fb09);
+        
+
+        marker_07e468582a3e48c08e9f8704ba6ff959.bindPopup(popup_1a302ca7fe7e4e24a2a375b2eaad2a83)
+        ;
+
+        
+    
+    
+            var marker_f139780cefe540c9985600f7e7cdeb22 = L.marker(
+                [41.0364972, -74.1271909],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_a22dc3f597654964926dd66b18a508c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a7dd1f131584213977cfa11339dc294 = $(`<div id="html_7a7dd1f131584213977cfa11339dc294" style="width: 100.0%; height: 100.0%;">[{'name': 'Blue-gray Gnatcatcher - Polioptila caerulea', 'date': '02 May 2021'}, {'name': 'Wild Turkey - Meleagris gallopavo', 'date': '14 Mar 2021'}, {'name': 'Virginia Rail - Rallus limicola', 'date': '31 Jan 2021'}, {'name': 'Rusty Blackbird - Euphagus carolinus', 'date': '18 Jan 2021'}, {'name': 'Hairy Woodpecker - Dryobates villosus', 'date': '22 Nov 2020'}, {'name': 'Pileated Woodpecker - Dryocopus pileatus', 'date': '22 Nov 2020'}]</div>`)[0];
+            popup_a22dc3f597654964926dd66b18a508c6.setContent(html_7a7dd1f131584213977cfa11339dc294);
+        
+
+        marker_f139780cefe540c9985600f7e7cdeb22.bindPopup(popup_a22dc3f597654964926dd66b18a508c6)
+        ;
+
+        
+    
+    
+            var marker_98faae235e1a42eca275075ff36d7d01 = L.marker(
+                [40.9057611, -74.0533555],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_2d04fe038491439b8bc0393a6c30e739 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce340b277f2a45849297c15f4b02985d = $(`<div id="html_ce340b277f2a45849297c15f4b02985d" style="width: 100.0%; height: 100.0%;">[{'name': 'Veery - Catharus fuscescens', 'date': '02 May 2021'}]</div>`)[0];
+            popup_2d04fe038491439b8bc0393a6c30e739.setContent(html_ce340b277f2a45849297c15f4b02985d);
+        
+
+        marker_98faae235e1a42eca275075ff36d7d01.bindPopup(popup_2d04fe038491439b8bc0393a6c30e739)
+        ;
+
+        
+    
+    
+            var marker_42ffb965424c4a1295dc48a85641d3ae = L.marker(
+                [40.8002449, -74.0497181],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_4898c0627b1b4dcdb255bd63c259736b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e3fd4281a904ed6af71bcf805ed16ea = $(`<div id="html_9e3fd4281a904ed6af71bcf805ed16ea" style="width: 100.0%; height: 100.0%;">[{'name': 'Ovenbird - Seiurus aurocapilla', 'date': '01 May 2021'}, {'name': 'Great Horned Owl - Bubo virginianus', 'date': '10 Apr 2021'}]</div>`)[0];
+            popup_4898c0627b1b4dcdb255bd63c259736b.setContent(html_9e3fd4281a904ed6af71bcf805ed16ea);
+        
+
+        marker_42ffb965424c4a1295dc48a85641d3ae.bindPopup(popup_4898c0627b1b4dcdb255bd63c259736b)
+        ;
+
+        
+    
+    
+            var marker_8aa328af78e9412db160c2f3d8c7bae4 = L.marker(
+                [40.7959347, -74.0498471],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_d535c01246ef4c538924b99dd58d9c51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2de74c90590a4cf0a1c5d9bff62c301a = $(`<div id="html_2de74c90590a4cf0a1c5d9bff62c301a" style="width: 100.0%; height: 100.0%;">[{'name': 'Yellow Warbler - Setophaga petechia', 'date': '01 May 2021'}, {'name': 'Glossy Ibis - Plegadis falcinellus', 'date': '03 Apr 2021'}, {'name': 'Northern Harrier - Circus hudsonius', 'date': '19 Dec 2020'}, {'name': 'Swamp Sparrow - Melospiza georgiana', 'date': '19 Dec 2020'}, {'name': 'Green-winged Teal - Anas crecca', 'date': '10 Oct 2020'}, {'name': 'Scarlet Tanager - Piranga olivacea', 'date': '13 Sep 2020'}, {'name': 'Semipalmated Sandpiper - Calidris pusilla', 'date': '30 Aug 2020'}, {'name': 'Greater Yellowlegs - Tringa melanoleuca', 'date': '30 Aug 2020'}, {'name': 'Herring Gull - Larus argentatus', 'date': '30 Aug 2020'}, {'name': 'Snowy Egret - Egretta thula', 'date': '30 Aug 2020'}, {'name': 'Warbling Vireo - Vireo gilvus', 'date': '30 Aug 2020'}, {'name': 'Song Sparrow - Melospiza melodia', 'date': '30 Aug 2020'}]</div>`)[0];
+            popup_d535c01246ef4c538924b99dd58d9c51.setContent(html_2de74c90590a4cf0a1c5d9bff62c301a);
+        
+
+        marker_8aa328af78e9412db160c2f3d8c7bae4.bindPopup(popup_d535c01246ef4c538924b99dd58d9c51)
+        ;
+
+        
+    
+    
+            var marker_f85dc6255d2a478dacec571befe34c1a = L.marker(
+                [40.7138227, -74.463013],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_7b426e41d9854580802d1aa5fb7689e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68f9e489f080450abb84be226ac1f00b = $(`<div id="html_68f9e489f080450abb84be226ac1f00b" style="width: 100.0%; height: 100.0%;">[{'name': 'Purple Martin - Progne subis', 'date': '21 Apr 2021'}]</div>`)[0];
+            popup_7b426e41d9854580802d1aa5fb7689e2.setContent(html_68f9e489f080450abb84be226ac1f00b);
+        
+
+        marker_f85dc6255d2a478dacec571befe34c1a.bindPopup(popup_7b426e41d9854580802d1aa5fb7689e2)
+        ;
+
+        
+    
+    
+            var marker_aec7a2a04dd948949c12aeaddfda5416 = L.marker(
+                [39.382111, -74.5025],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_f273833e4f6f42cc80e060004dd11224 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72e481c7111d42b1a402cad269a35e39 = $(`<div id="html_72e481c7111d42b1a402cad269a35e39" style="width: 100.0%; height: 100.0%;">[{'name': 'Willet - Tringa semipalmata', 'date': '18 Apr 2021'}]</div>`)[0];
+            popup_f273833e4f6f42cc80e060004dd11224.setContent(html_72e481c7111d42b1a402cad269a35e39);
+        
+
+        marker_aec7a2a04dd948949c12aeaddfda5416.bindPopup(popup_f273833e4f6f42cc80e060004dd11224)
+        ;
+
+        
+    
+    
+            var marker_211f634b05944825bbf9e99d89cf2631 = L.marker(
+                [40.4037689, -74.3714762],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_b9f01b8246b14012af91f9d0264d4538 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2d1d3c69ab847c8b29b2a1fb37908f7 = $(`<div id="html_f2d1d3c69ab847c8b29b2a1fb37908f7" style="width: 100.0%; height: 100.0%;">[{'name': 'Lesser Scaup - Aythya affinis', 'date': '21 Mar 2021'}, {'name': 'Pied-billed Grebe - Podilymbus podiceps', 'date': '21 Mar 2021'}]</div>`)[0];
+            popup_b9f01b8246b14012af91f9d0264d4538.setContent(html_f2d1d3c69ab847c8b29b2a1fb37908f7);
+        
+
+        marker_211f634b05944825bbf9e99d89cf2631.bindPopup(popup_b9f01b8246b14012af91f9d0264d4538)
+        ;
+
+        
+    
+    
+            var marker_0377726ff8454cbf86faa276cef7c723 = L.marker(
+                [40.5527165, -74.6641022],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_10317de3bf1a4b049aef71f3f2dac323 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19ef1c5f3d13412f861779aa374bd2d3 = $(`<div id="html_19ef1c5f3d13412f861779aa374bd2d3" style="width: 100.0%; height: 100.0%;">[{'name': 'Wood Duck - Aix sponsa', 'date': '21 Mar 2021'}]</div>`)[0];
+            popup_10317de3bf1a4b049aef71f3f2dac323.setContent(html_19ef1c5f3d13412f861779aa374bd2d3);
+        
+
+        marker_0377726ff8454cbf86faa276cef7c723.bindPopup(popup_10317de3bf1a4b049aef71f3f2dac323)
+        ;
+
+        
+    
+    
+            var marker_39b53ddc1f2743249b87a8b4d8f8e774 = L.marker(
+                [40.6818096, -74.1146278],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_12c318fe51e24cf9a2699eb8bc5f8281 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49f9138f57de458e92377cdad7f944ad = $(`<div id="html_49f9138f57de458e92377cdad7f944ad" style="width: 100.0%; height: 100.0%;">[{'name': 'Snowy Owl - Bubo scandiacus', 'date': '30 Jan 2021'}]</div>`)[0];
+            popup_12c318fe51e24cf9a2699eb8bc5f8281.setContent(html_49f9138f57de458e92377cdad7f944ad);
+        
+
+        marker_39b53ddc1f2743249b87a8b4d8f8e774.bindPopup(popup_12c318fe51e24cf9a2699eb8bc5f8281)
+        ;
+
+        
+    
+    
+            var marker_ccfa0915fe404498a6804d0733dc702c = L.marker(
+                [40.8798863, -74.0087168],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_83ea7aa5f1f243819df1c4e673a3b61b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_334127065df84e53b4757a0036c4366d = $(`<div id="html_334127065df84e53b4757a0036c4366d" style="width: 100.0%; height: 100.0%;">[{'name': "Townsend's Warbler - Setophaga townsendi", 'date': '24 Jan 2021'}]</div>`)[0];
+            popup_83ea7aa5f1f243819df1c4e673a3b61b.setContent(html_334127065df84e53b4757a0036c4366d);
+        
+
+        marker_ccfa0915fe404498a6804d0733dc702c.bindPopup(popup_83ea7aa5f1f243819df1c4e673a3b61b)
+        ;
+
+        
+    
+    
+            var marker_07aecb52fd124b0ba6fb4fa98696b03f = L.marker(
+                [40.103602, -74.034932],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_3a7ef9a888584b4ebad60ad6ada214d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a49c5944fa52432c8ef99992d2c0d2e3 = $(`<div id="html_a49c5944fa52432c8ef99992d2c0d2e3" style="width: 100.0%; height: 100.0%;">[{'name': 'King Eider - Somateria spectabilis', 'date': '23 Jan 2021'}]</div>`)[0];
+            popup_3a7ef9a888584b4ebad60ad6ada214d0.setContent(html_a49c5944fa52432c8ef99992d2c0d2e3);
+        
+
+        marker_07aecb52fd124b0ba6fb4fa98696b03f.bindPopup(popup_3a7ef9a888584b4ebad60ad6ada214d0)
+        ;
+
+        
+    
+    
+            var marker_7af3fe497e724c788e66f637da087072 = L.marker(
+                [39.458, -74.465],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_f0d497bf74704f8b8dae90fa67e06f14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4bb0f0a2de04155b8a9dfa87ee7a738 = $(`<div id="html_e4bb0f0a2de04155b8a9dfa87ee7a738" style="width: 100.0%; height: 100.0%;">[{'name': 'Carolina Chickadee - Poecile carolinensis', 'date': '17 Jan 2021'}]</div>`)[0];
+            popup_f0d497bf74704f8b8dae90fa67e06f14.setContent(html_e4bb0f0a2de04155b8a9dfa87ee7a738);
+        
+
+        marker_7af3fe497e724c788e66f637da087072.bindPopup(popup_f0d497bf74704f8b8dae90fa67e06f14)
+        ;
+
+        
+    
+    
+            var marker_c082b7b82183492abe7fc4af651a4651 = L.marker(
+                [39.7633333, -74.1058333],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_4eb83c1151234f578663f2e8977234a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e667c46f8725484282e61196df6840d1 = $(`<div id="html_e667c46f8725484282e61196df6840d1" style="width: 100.0%; height: 100.0%;">[{'name': 'Harlequin Duck - Histrionicus histrionicus', 'date': '10 Jan 2021'}, {'name': 'Ruddy Turnstone - Arenaria interpres', 'date': '10 Jan 2021'}, {'name': 'Purple Sandpiper - Calidris maritima', 'date': '10 Jan 2021'}, {'name': 'Great Cormorant - Phalacrocorax carbo', 'date': '10 Jan 2021'}, {'name': 'Boat-tailed Grackle - Quiscalus major', 'date': '10 Jan 2021'}]</div>`)[0];
+            popup_4eb83c1151234f578663f2e8977234a6.setContent(html_e667c46f8725484282e61196df6840d1);
+        
+
+        marker_c082b7b82183492abe7fc4af651a4651.bindPopup(popup_4eb83c1151234f578663f2e8977234a6)
+        ;
+
+        
+    
+    
+            var marker_dcdead9132014dc9b39f422acd740fd4 = L.marker(
+                [40.8665581, -74.0011184],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_f27b27df0d4847899d9dc2d78c4054ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6a3425fa85242c1978121d350414ba4 = $(`<div id="html_e6a3425fa85242c1978121d350414ba4" style="width: 100.0%; height: 100.0%;">[{'name': 'Common Merganser - Mergus merganser', 'date': '09 Jan 2021'}]</div>`)[0];
+            popup_f27b27df0d4847899d9dc2d78c4054ca.setContent(html_e6a3425fa85242c1978121d350414ba4);
+        
+
+        marker_dcdead9132014dc9b39f422acd740fd4.bindPopup(popup_f27b27df0d4847899d9dc2d78c4054ca)
+        ;
+
+        
+    
+    
+            var marker_5c4cca746b35426d878b88dca342cfa7 = L.marker(
+                [40.467049, -73.998396],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_5d14931e269141818ab76cb6b18a04d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b93be3c69f6b4e7c9e6e72fb3424ab3a = $(`<div id="html_b93be3c69f6b4e7c9e6e72fb3424ab3a" style="width: 100.0%; height: 100.0%;">[{'name': 'White-winged Scoter - Melanitta deglandi', 'date': '01 Jan 2021'}, {'name': 'Long-tailed Duck - Clangula hyemalis', 'date': '01 Jan 2021'}, {'name': 'Common Loon - Gavia immer', 'date': '01 Jan 2021'}, {'name': 'Horned Lark - Eremophila alpestris', 'date': '01 Jan 2021'}, {'name': 'Field Sparrow - Spizella pusilla', 'date': '01 Jan 2021'}, {'name': 'Surf Scoter - Melanitta perspicillata', 'date': '29 Nov 2020'}, {'name': 'Red-throated Loon - Gavia stellata', 'date': '29 Nov 2020'}, {'name': 'Snow Bunting - Plectrophenax nivalis', 'date': '29 Nov 2020'}, {'name': 'Sanderling - Calidris alba', 'date': '27 Sep 2020'}, {'name': 'Royal Tern - Thalasseus maximus', 'date': '27 Sep 2020'}]</div>`)[0];
+            popup_5d14931e269141818ab76cb6b18a04d4.setContent(html_b93be3c69f6b4e7c9e6e72fb3424ab3a);
+        
+
+        marker_5c4cca746b35426d878b88dca342cfa7.bindPopup(popup_5d14931e269141818ab76cb6b18a04d4)
+        ;
+
+        
+    
+    
+            var marker_8c7db49f6e624fc08fdd41a1b2798eb6 = L.marker(
+                [40.6188482, -73.8307995],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_46b6267810c647a89c8c17e82a38b05e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_007626c3e55140af9a30bb1bcfc26009 = $(`<div id="html_007626c3e55140af9a30bb1bcfc26009" style="width: 100.0%; height: 100.0%;">[{'name': 'Snow Goose - Anser caerulescens', 'date': '26 Dec 2020'}, {'name': 'Orange-crowned Warbler - Leiothlypis celata', 'date': '26 Dec 2020'}, {'name': 'Black-capped Chickadee - Poecile atricapillus', 'date': '08 Nov 2020'}]</div>`)[0];
+            popup_46b6267810c647a89c8c17e82a38b05e.setContent(html_007626c3e55140af9a30bb1bcfc26009);
+        
+
+        marker_8c7db49f6e624fc08fdd41a1b2798eb6.bindPopup(popup_46b6267810c647a89c8c17e82a38b05e)
+        ;
+
+        
+    
+    
+            var marker_5123301e639346af8406a533797703f4 = L.marker(
+                [40.833114, -74.011545],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_7f05879592d3446ba0caac417ae24337 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9512e0e6f4e34e78857460c8875ff620 = $(`<div id="html_9512e0e6f4e34e78857460c8875ff620" style="width: 100.0%; height: 100.0%;">[{'name': 'Monk Parakeet - Myiopsitta monachus', 'date': '20 Dec 2020'}]</div>`)[0];
+            popup_7f05879592d3446ba0caac417ae24337.setContent(html_9512e0e6f4e34e78857460c8875ff620);
+        
+
+        marker_5123301e639346af8406a533797703f4.bindPopup(popup_7f05879592d3446ba0caac417ae24337)
+        ;
+
+        
+    
+    
+            var marker_0e474ff0a7a0431a8e93890dfacfaa8c = L.marker(
+                [40.785376, -74.1005132],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_ec785f6c6fc849688ea56ea70c6f1315 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62bd83dd9a8549a291f9236f352e3d33 = $(`<div id="html_62bd83dd9a8549a291f9236f352e3d33" style="width: 100.0%; height: 100.0%;">[{'name': 'Canvasback - Aythya valisineria', 'date': '04 Dec 2020'}, {'name': 'American Coot - Fulica americana', 'date': '04 Dec 2020'}, {'name': 'Northern Pintail - Anas acuta', 'date': '14 Nov 2020'}, {'name': 'Hooded Merganser - Lophodytes cucullatus', 'date': '14 Nov 2020'}]</div>`)[0];
+            popup_ec785f6c6fc849688ea56ea70c6f1315.setContent(html_62bd83dd9a8549a291f9236f352e3d33);
+        
+
+        marker_0e474ff0a7a0431a8e93890dfacfaa8c.bindPopup(popup_ec785f6c6fc849688ea56ea70c6f1315)
+        ;
+
+        
+    
+    
+            var marker_3eb9a3956049492db618d5f8f233fb9d = L.marker(
+                [40.4173516, -73.9810753],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_08d9acf9448a4be6b4651e643a6bb105 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c12f77650ddd49dbaf0b4820529cd9bf = $(`<div id="html_c12f77650ddd49dbaf0b4820529cd9bf" style="width: 100.0%; height: 100.0%;">[{'name': 'Common Eider - Somateria mollissima', 'date': '29 Nov 2020'}, {'name': 'Red-breasted Merganser - Mergus serrator', 'date': '29 Nov 2020'}]</div>`)[0];
+            popup_08d9acf9448a4be6b4651e643a6bb105.setContent(html_c12f77650ddd49dbaf0b4820529cd9bf);
+        
+
+        marker_3eb9a3956049492db618d5f8f233fb9d.bindPopup(popup_08d9acf9448a4be6b4651e643a6bb105)
+        ;
+
+        
+    
+    
+            var marker_99456404ddaa4613872292721c0b0f85 = L.marker(
+                [40.712492, -74.4879055],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_43e49fec742f499a9257d4dfed3f95c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5341dda4b81d46159771396a5441c063 = $(`<div id="html_5341dda4b81d46159771396a5441c063" style="width: 100.0%; height: 100.0%;">[{'name': 'White-breasted Nuthatch - Sitta carolinensis', 'date': '27 Nov 2020'}, {'name': 'Winter Wren - Troglodytes hiemalis', 'date': '27 Nov 2020'}, {'name': 'Tennessee Warbler - Leiothlypis peregrina', 'date': '27 Nov 2020'}, {'name': 'Blue Jay - Cyanocitta cristata', 'date': '13 Sep 2020'}]</div>`)[0];
+            popup_43e49fec742f499a9257d4dfed3f95c2.setContent(html_5341dda4b81d46159771396a5441c063);
+        
+
+        marker_99456404ddaa4613872292721c0b0f85.bindPopup(popup_43e49fec742f499a9257d4dfed3f95c2)
+        ;
+
+        
+    
+    
+            var marker_b2cc7a48ab8a4437a8499b114e18bb06 = L.marker(
+                [40.718171, -74.045039],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_b6f640946864459da3885e58d5afd5d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85b2e9a37d634a6fa787e5fd24d12753 = $(`<div id="html_85b2e9a37d634a6fa787e5fd24d12753" style="width: 100.0%; height: 100.0%;">[{'name': 'Common Raven - Corvus corax', 'date': '16 Nov 2020'}, {'name': 'Ruby-throated Hummingbird - Archilochus colubris', 'date': '01 Sep 2020'}, {'name': 'House Finch - Haemorhous mexicanus', 'date': '09 Jun 2020'}, {'name': 'Mourning Dove - Zenaida macroura', 'date': '06 Jun 2020'}, {'name': 'American Robin - Turdus migratorius', 'date': '30 May 2020'}, {'name': 'Chimney Swift - Chaetura pelagica', 'date': '29 May 2020'}, {'name': 'Cedar Waxwing - Bombycilla cedrorum', 'date': '29 May 2020'}, {'name': 'Rock Pigeon - Columba livia', 'date': '25 May 2020'}, {'name': 'Gray Catbird - Dumetella carolinensis', 'date': '22 May 2020'}, {'name': 'Northern Mockingbird - Mimus polyglottos', 'date': '22 May 2020'}, {'name': 'European Starling - Sturnus vulgaris', 'date': '17 May 2020'}, {'name': 'House Sparrow - Passer domesticus', 'date': '17 May 2020'}, {'name': 'Common Yellowthroat - Geothlypis trichas', 'date': '16 May 2020'}, {'name': 'Northern Cardinal - Cardinalis cardinalis', 'date': '16 May 2020'}]</div>`)[0];
+            popup_b6f640946864459da3885e58d5afd5d5.setContent(html_85b2e9a37d634a6fa787e5fd24d12753);
+        
+
+        marker_b2cc7a48ab8a4437a8499b114e18bb06.bindPopup(popup_b6f640946864459da3885e58d5afd5d5)
+        ;
+
+        
+    
+    
+            var marker_6cde5a6fbf43418ab130abf5fb2d79ee = L.marker(
+                [40.6226854, -73.8220096],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_a4863dff09b842fe9ef8690a89a25a33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfdf4a8becb442ceba3e84d480ef5732 = $(`<div id="html_bfdf4a8becb442ceba3e84d480ef5732" style="width: 100.0%; height: 100.0%;">[{'name': 'Bufflehead - Bucephala albeola', 'date': '08 Nov 2020'}, {'name': 'Eared Grebe - Podiceps nigricollis', 'date': '08 Nov 2020'}]</div>`)[0];
+            popup_a4863dff09b842fe9ef8690a89a25a33.setContent(html_bfdf4a8becb442ceba3e84d480ef5732);
+        
+
+        marker_6cde5a6fbf43418ab130abf5fb2d79ee.bindPopup(popup_a4863dff09b842fe9ef8690a89a25a33)
+        ;
+
+        
+    
+    
+            var marker_7a0a1504de6a49dc8c042c50c850bffe = L.marker(
+                [40.7180543, -74.0471381],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_f200cfb656e8449ba881d0a32a7256f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3ada3fb12134fe7b327dcc257f0af0b = $(`<div id="html_c3ada3fb12134fe7b327dcc257f0af0b" style="width: 100.0%; height: 100.0%;">[{'name': 'Hermit Thrush - Catharus guttatus', 'date': '27 Oct 2020'}, {'name': 'Red-bellied Woodpecker - Melanerpes carolinus', 'date': '30 Sep 2020'}, {'name': 'Red-winged Blackbird - Agelaius phoeniceus', 'date': '08 Jun 2020'}, {'name': 'Common Grackle - Quiscalus quiscula', 'date': '08 Jun 2020'}]</div>`)[0];
+            popup_f200cfb656e8449ba881d0a32a7256f8.setContent(html_c3ada3fb12134fe7b327dcc257f0af0b);
+        
+
+        marker_7a0a1504de6a49dc8c042c50c850bffe.bindPopup(popup_f200cfb656e8449ba881d0a32a7256f8)
+        ;
+
+        
+    
+    
+            var marker_c6ac70f86e174882ae550e831b3d8de0 = L.marker(
+                [38.9328558, -74.9579416],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_a6b5a09e4a8247d4b64bf8899e77bdee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8bd0bba1b7bb44c3ab7a347caeb05d27 = $(`<div id="html_8bd0bba1b7bb44c3ab7a347caeb05d27" style="width: 100.0%; height: 100.0%;">[{'name': 'Black Scoter - Melanitta americana', 'date': '24 Oct 2020'}, {'name': 'American Bittern - Botaurus lentiginosus', 'date': '24 Oct 2020'}]</div>`)[0];
+            popup_a6b5a09e4a8247d4b64bf8899e77bdee.setContent(html_8bd0bba1b7bb44c3ab7a347caeb05d27);
+        
+
+        marker_c6ac70f86e174882ae550e831b3d8de0.bindPopup(popup_a6b5a09e4a8247d4b64bf8899e77bdee)
+        ;
+
+        
+    
+    
+            var marker_8025cb8b20114e77b8f34a94937863a1 = L.marker(
+                [38.9359287, -74.9434519],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_609bd65f9ebd4f358cf3b8019efe7af8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_825e8ec909634cce8ce0e435947be93c = $(`<div id="html_825e8ec909634cce8ce0e435947be93c" style="width: 100.0%; height: 100.0%;">[{'name': 'Ruddy Duck - Oxyura jamaicensis', 'date': '24 Oct 2020'}, {'name': 'Red-shouldered Hawk - Buteo lineatus', 'date': '24 Oct 2020'}]</div>`)[0];
+            popup_609bd65f9ebd4f358cf3b8019efe7af8.setContent(html_825e8ec909634cce8ce0e435947be93c);
+        
+
+        marker_8025cb8b20114e77b8f34a94937863a1.bindPopup(popup_609bd65f9ebd4f358cf3b8019efe7af8)
+        ;
+
+        
+    
+    
+            var marker_63f6d02d6dd54a138e9dfc89932d24af = L.marker(
+                [40.6649251, -74.096083],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_6e10fd393a2f45c8a2c7a974377d7e1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87e6a231029344a9a09bbc35f8e6629c = $(`<div id="html_87e6a231029344a9a09bbc35f8e6629c" style="width: 100.0%; height: 100.0%;">[{'name': 'Gadwall - Mareca strepera', 'date': '10 Oct 2020'}, {'name': 'American Wigeon - Mareca americana', 'date': '10 Oct 2020'}, {'name': 'Horned Grebe - Podiceps auritus', 'date': '10 Oct 2020'}, {'name': 'Belted Kingfisher - Megaceryle alcyon', 'date': '10 Oct 2020'}, {'name': 'Merlin - Falco columbarius', 'date': '10 Oct 2020'}, {'name': 'White-crowned Sparrow - Zonotrichia leucophrys', 'date': '10 Oct 2020'}]</div>`)[0];
+            popup_6e10fd393a2f45c8a2c7a974377d7e1e.setContent(html_87e6a231029344a9a09bbc35f8e6629c);
+        
+
+        marker_63f6d02d6dd54a138e9dfc89932d24af.bindPopup(popup_6e10fd393a2f45c8a2c7a974377d7e1e)
+        ;
+
+        
+    
+    
+            var marker_93f1937f59b84e0ca0826a7be8ccd67e = L.marker(
+                [40.6717756, -74.1259477],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_ca55587666e4415b9d51b7c5d70980cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4fe786fdebe44a8e92d3bd00c525cbb3 = $(`<div id="html_4fe786fdebe44a8e92d3bd00c525cbb3" style="width: 100.0%; height: 100.0%;">[{'name': 'Brown Booby - Sula leucogaster', 'date': '10 Oct 2020'}]</div>`)[0];
+            popup_ca55587666e4415b9d51b7c5d70980cf.setContent(html_4fe786fdebe44a8e92d3bd00c525cbb3);
+        
+
+        marker_93f1937f59b84e0ca0826a7be8ccd67e.bindPopup(popup_ca55587666e4415b9d51b7c5d70980cf)
+        ;
+
+        
+    
+    
+            var marker_2e15e70a653c43a69b5b676ea288cf7c = L.marker(
+                [40.989621, -73.9060539],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_3b9e038f8f074967b74d19036389a262 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5881eee730894259a78b9f04443a5264 = $(`<div id="html_5881eee730894259a78b9f04443a5264" style="width: 100.0%; height: 100.0%;">[{'name': 'Black Vulture - Coragyps atratus', 'date': '10 Oct 2020'}, {'name': 'Bald Eagle - Haliaeetus leucocephalus', 'date': '10 Oct 2020'}, {'name': 'Peregrine Falcon - Falco peregrinus', 'date': '10 Oct 2020'}, {'name': 'Tufted Titmouse - Baeolophus bicolor', 'date': '10 Oct 2020'}]</div>`)[0];
+            popup_3b9e038f8f074967b74d19036389a262.setContent(html_5881eee730894259a78b9f04443a5264);
+        
+
+        marker_2e15e70a653c43a69b5b676ea288cf7c.bindPopup(popup_3b9e038f8f074967b74d19036389a262)
+        ;
+
+        
+    
+    
+            var marker_aac6e19f166a46f9b958175ebf69b952 = L.marker(
+                [40.4716, -74.0059876],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_ab747d62cd2449fbb11bdaa4e3997ebf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bc9a0d5875147ebb311f958eefd7f15 = $(`<div id="html_9bc9a0d5875147ebb311f958eefd7f15" style="width: 100.0%; height: 100.0%;">[{'name': 'American Kestrel - Falco sparverius', 'date': '27 Sep 2020'}]</div>`)[0];
+            popup_ab747d62cd2449fbb11bdaa4e3997ebf.setContent(html_9bc9a0d5875147ebb311f958eefd7f15);
+        
+
+        marker_aac6e19f166a46f9b958175ebf69b952.bindPopup(popup_ab747d62cd2449fbb11bdaa4e3997ebf)
+        ;
+
+        
+    
+    
+            var marker_fc46dfdef37f473cade35f4531887190 = L.marker(
+                [40.7191602, -74.525671],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_00ca9be98c23463b95029f378a5662d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3611ef7312824a0d801ac493869220f9 = $(`<div id="html_3611ef7312824a0d801ac493869220f9" style="width: 100.0%; height: 100.0%;">[{'name': 'Eastern Bluebird - Sialia sialis', 'date': '13 Sep 2020'}]</div>`)[0];
+            popup_00ca9be98c23463b95029f378a5662d6.setContent(html_3611ef7312824a0d801ac493869220f9);
+        
+
+        marker_fc46dfdef37f473cade35f4531887190.bindPopup(popup_00ca9be98c23463b95029f378a5662d6)
+        ;
+
+        
+    
+    
+            var marker_be2a548e31fd4cd9917e32268f5ed2cb = L.marker(
+                [40.7237564, -74.040544],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_d44dad34aed84779954f02c770ccfd24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3056bd9b6bb4f74bc6002c296de1240 = $(`<div id="html_a3056bd9b6bb4f74bc6002c296de1240" style="width: 100.0%; height: 100.0%;">[{'name': 'Fish Crow - Corvus ossifragus', 'date': '10 Sep 2020'}]</div>`)[0];
+            popup_d44dad34aed84779954f02c770ccfd24.setContent(html_a3056bd9b6bb4f74bc6002c296de1240);
+        
+
+        marker_be2a548e31fd4cd9917e32268f5ed2cb.bindPopup(popup_d44dad34aed84779954f02c770ccfd24)
+        ;
+
+        
+    
+    
+            var marker_073135ea324a44c9a3c4998d2c167e81 = L.marker(
+                [40.7110282, -74.0427876],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_a6f2120014b74f179c9d8fcb95a0c75c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1bba6b7a8e4465fb19352eb3c9772ce = $(`<div id="html_b1bba6b7a8e4465fb19352eb3c9772ce" style="width: 100.0%; height: 100.0%;">[{'name': 'Mute Swan - Cygnus olor', 'date': '14 Aug 2020'}, {'name': 'Mallard - Anas platyrhynchos', 'date': '28 Jun 2020'}, {'name': 'Common Tern - Sterna hirundo', 'date': '28 Jun 2020'}, {'name': 'Barn Swallow - Hirundo rustica', 'date': '28 Jun 2020'}]</div>`)[0];
+            popup_a6f2120014b74f179c9d8fcb95a0c75c.setContent(html_b1bba6b7a8e4465fb19352eb3c9772ce);
+        
+
+        marker_073135ea324a44c9a3c4998d2c167e81.bindPopup(popup_a6f2120014b74f179c9d8fcb95a0c75c)
+        ;
+
+        
+    
+    
+            var marker_8bd3bee1d1584b2297b7a70f7b4f7780 = L.marker(
+                [40.7334646, -74.0389181],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_e92a98157cc84f4481b940ba2919b581 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec4284a051404ad0999e4045404019a6 = $(`<div id="html_ec4284a051404ad0999e4045404019a6" style="width: 100.0%; height: 100.0%;">[{'name': 'Ring-billed Gull - Larus delawarensis', 'date': '13 Aug 2020'}]</div>`)[0];
+            popup_e92a98157cc84f4481b940ba2919b581.setContent(html_ec4284a051404ad0999e4045404019a6);
+        
+
+        marker_8bd3bee1d1584b2297b7a70f7b4f7780.bindPopup(popup_e92a98157cc84f4481b940ba2919b581)
+        ;
+
+        
+    
+    
+            var marker_e89e3130ccf148da91d11071e6fee435 = L.marker(
+                [40.7340868, -74.0391371],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_e14f6bd694dc434db3a424b320f3667f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ffe1c59f16140ae8890c62b6e5396f3 = $(`<div id="html_7ffe1c59f16140ae8890c62b6e5396f3" style="width: 100.0%; height: 100.0%;">[{'name': 'Canada Goose - Branta canadensis', 'date': '18 Jun 2020'}]</div>`)[0];
+            popup_e14f6bd694dc434db3a424b320f3667f.setContent(html_7ffe1c59f16140ae8890c62b6e5396f3);
+        
+
+        marker_e89e3130ccf148da91d11071e6fee435.bindPopup(popup_e14f6bd694dc434db3a424b320f3667f)
+        ;
+
+        
+    
+    
+            var marker_f71e416785d9422ea59d85c8f5a238ab = L.marker(
+                [40.7207898, -74.0465093],
+                {}
+            ).addTo(map_ce0012292a48412cbe39b87244386ac5);
+        
+    
+        var popup_dc5da6120d1547ec98d31c6fb332dc37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37b439aae9f94afa9fcfb7169dac050a = $(`<div id="html_37b439aae9f94afa9fcfb7169dac050a" style="width: 100.0%; height: 100.0%;">[{'name': 'American Crow - Corvus brachyrhynchos', 'date': '18 Jun 2020'}]</div>`)[0];
+            popup_dc5da6120d1547ec98d31c6fb332dc37.setContent(html_37b439aae9f94afa9fcfb7169dac050a);
+        
+
+        marker_f71e416785d9422ea59d85c8f5a238ab.bindPopup(popup_dc5da6120d1547ec98d31c6fb332dc37)
+        ;
+
+        
+    
+</script>
