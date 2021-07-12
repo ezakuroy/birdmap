@@ -36,6 +36,8 @@ window.onload=function() {
 	     this.circle.setLatLng(this.map.getCenter());
 	   });
 
+	rerenderImages();
+
 };
 
 function submitSearch() {
@@ -118,10 +120,33 @@ function parseData(data) {
 	var gallery = document.getElementById("gallery");
 	for (let[key, value] of uniqueSpecies) {
 		var newDiv = document.createElement("div");
-		newDiv.className = 'col-md-4 gx-0';
-		newDiv.innerHTML = '<img src="./static/images/image-' + key + '.png"/><div>' + value + '</div>';
+		newDiv.className = 'col-md-4 gx-0 birdImageWrapper';
+		newDiv.innerHTML = '<a href="https://ebird.org/species/' + key + '" target="_blank"><img src="./static/images/image-' + key + '.png" onLoad = "imageOnSuccess(this, event)" onError="imageOnError(this,event)"/><div class="birdlabel">' + value + '</div></a>';
 
 		gallery.appendChild(newDiv);
 	}
 }
 
+function imageOnSuccess(image, event) {
+	image.className = 'success';
+}
+
+function imageOnError(image, event) {
+	console.log(image);
+	image.className='broken';
+}
+
+function rerenderImages() {
+	var allImages = document.getElementsByTagName("img");
+
+	for (var i = 0; i < allImages.length; i++) {
+	    if(allImages[i].height == null || allImages[i].height < 20) {     
+		let imgsrc = allImages[i].src;
+		if(imgsrc.indexOf('?') > 1) {
+		    imgsrc = imgsrc.substr(0, imgsrc.indexOf('?'));
+		}
+		allImages[i].src = allImages[i].src + '?' + new Date().getTime();   
+	    }
+	}
+	setTimeout(rerenderImages, 2500);
+}

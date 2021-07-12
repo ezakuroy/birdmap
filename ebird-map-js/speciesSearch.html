@@ -18,23 +18,29 @@
 	</head>
 
 	<body>
-	        <div class="mb-3">
-			<select name="mode" id="mode">
-				<option value="species">Species Search</option>
-				<option value="notable">Notable/Rare</option>
-				<option value="recent">Recent</option>
-			</select>
 
-	                <label for="species" class="form-label">Species code</label>
-			<input type="text" class="form-control" id="speciesCode" placeholder="hoowar">
-	        </div>
-	        <div class="mb-3">
-	                <button type="submit" class="btn btn-primary" onClick="submitSearch();">Search</button>
-	        </div>			
-		
-		<div class="row">
-			<div id="speciesMap" class="col-md-7" style="height:500px;"></div>
-			<div id="gallery" class="col-md-5 row"/>
+	<div class="row">
+		<div class="leftFixed col-md-5">
+			<div class="controlForm">
+				<div class="mb-3">
+					<select name="mode" id="mode">
+						<option value="species">Species Search</option>
+						<option value="notable">Notable/Rare</option>
+						<option value="recent">Recent</option>
+					</select>
+
+					<label for="species" class="form-label">Species code</label>
+					<input type="text" class="form-control" id="speciesCode" placeholder="hoowar">
+				</div>
+				<div class="mb-3">
+					<button type="submit" class="btn btn-primary" onClick="submitSearch();">Search</button>
+				</div>			
+			</div>	
+			<div id="speciesMap" style="height:500px;"></div>
+			</div>
 		</div>
+
+			<div id="gallery" class="col-md-7 offset-md-5 row"/>
+	</div>
 	</body>
 </html>
