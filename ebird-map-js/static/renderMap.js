@@ -109,7 +109,15 @@ function parseData(data) {
 			popupText += "</br><a href='https://ebird.org/checklist/" + sighting.subId + "' target='_blank'>Checklist</a>";
 		}
 
-		uniqueSpecies.set(sighting.speciesCode, sighting.comName)
+		//uniqueSpecies.set(sighting.speciesCode, sighting.comName)
+		
+		if(uniqueSpecies.get(sighting.speciesCode) != null) {
+			uniqueSpecies.get(sighting.speciesCode)["markers"].push(marker);
+		}
+		else {
+			uniqueSpecies.set(sighting.speciesCode, {"speciesCode": sighting.comName, "markers": [marker]})
+		}
+
 
 		marker.bindPopup(popupText);
 
@@ -121,7 +129,7 @@ function parseData(data) {
 	for (let[key, value] of uniqueSpecies) {
 		var newDiv = document.createElement("div");
 		newDiv.className = 'col-md-4 gx-0 birdImageWrapper';
-		newDiv.innerHTML = '<a href="https://ebird.org/species/' + key + '" target="_blank"><img src="./static/images/image-' + key + '.png" onLoad = "imageOnSuccess(this, event)" onError="imageOnError(this,event)"/><div class="birdlabel">' + value + '</div></a>';
+		newDiv.innerHTML = '<a href="https://ebird.org/species/' + key + '" target="_blank"><img src="./static/images/image-' + key + '.png" onLoad = "imageOnSuccess(this, event)" onError="imageOnError(this,event)"/><div class="birdlabel">' + value["speciesCode"] + '</div></a>';
 
 		gallery.appendChild(newDiv);
 	}
@@ -149,4 +157,16 @@ function rerenderImages() {
 	    }
 	}
 	setTimeout(rerenderImages, 2500);
+}
+
+function selectChange() {
+	var mode = document.getElementById("mode").value;
+	let speciesBlock = document.getElementById("speciesSearch");
+
+	if(mode === 'species') {
+		speciesBlock.style.display = "block";				
+	}	
+	else {
+		speciesBlock.style.display="none";
+	}
 }

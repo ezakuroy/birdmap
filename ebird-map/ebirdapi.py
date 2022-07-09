@@ -23,10 +23,10 @@ def localSpecies(mode, speciesName, lat, lng, distance):
         maxResults = 100
     elif mode == 'notable':
         url += 'notable'
-        back = 7
+        back = 2
         maxResults = 100
     elif mode == 'recent':
-        back = 7
+        back = 2
         maxResults = 100
     
     url += '?lat=' + str(lat) + '&lng=' + str(lng) + '&back=' + str(back) + '&maxResults=' + str(maxResults)
